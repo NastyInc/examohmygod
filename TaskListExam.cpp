@@ -1,4 +1,5 @@
-﻿#include <iostream>
+
+#include <iostream>
 #include "task.h"
 
 void Menu()
@@ -55,13 +56,10 @@ int main()
 {
     setlocale(0, "ru");
 
-    time_t t = time(NULL);
-    
-    //Task abrakadabra = Task("Спать", 1, "Очень важно", t);
-//getline - ввод!!!!
+    //time_t t = time(NULL);
    
     
-    //int userChoice;
+   
 
     std::cout << "Добрый день, перед Вами приложение <<Список дел>>!" << std::endl;
     std::cout << "Начнем использование"<< std::endl;
@@ -69,7 +67,6 @@ int main()
 
     
    
-    //std::cin >> userChoice;
 
     Menu();
     
