@@ -1,3 +1,4 @@
+
 #include "task.h"
 #include <iostream>
 
@@ -11,39 +12,38 @@ Task::Task(std::string name, int priority, std::string description, time_t date)
 
 void Task::Print()
 {
-	std::cout << "Название: " << this->_name << std::endl;
+	std::cout << "ГЌГ Г§ГўГ Г­ГЁГҐ: " << this->_name << std::endl;
 }
 
 Task Task::CreateTask()
 {
 
 	std::string name;
-	std::cout << "Введите имя задачи: ";
+	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЁГ¬Гї Г§Г Г¤Г Г·ГЁ: ";
 	std::cin >> name;
 
 	int priority;
-	std::cout << "Введите приоритет задачи: ";
+	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЇГ°ГЁГ®Г°ГЁГІГҐГІ Г§Г Г¤Г Г·ГЁ: ";
 	std::cin >> priority;
 
 	std::string description;
-	std::cout << "Введите описание задачи: ";
+	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г®ГЇГЁГ±Г Г­ГЁГҐ Г§Г Г¤Г Г·ГЁ: ";
 	std::cin >> description;
 
 	int date[3] = {};
 
-	std::cout << "Введите день окончания задачи: ";
+	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г¤ГҐГ­Гј Г®ГЄГ®Г­Г·Г Г­ГЁГї Г§Г Г¤Г Г·ГЁ: ";
 	std::cin >> date[0];
 
-	std::cout << "Введите месяц окончания задачи: ";
+	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г¬ГҐГ±ГїГ¶ Г®ГЄГ®Г­Г·Г Г­ГЁГї Г§Г Г¤Г Г·ГЁ: ";
 	std::cin >> date[1];
 
-	std::cout << "Введите год окончания задачи: ";
+	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЈГ®Г¤ Г®ГЄГ®Г­Г·Г Г­ГЁГї Г§Г Г¤Г Г·ГЁ: ";
 	std::cin >> date[2];
 
-	// TO_DO: Поправить
+	// TO_DO: ГЏГ®ГЇГ°Г ГўГЁГІГј
 	time_t currentTime = time(NULL);
 
 	Task task(name, priority, description, currentTime);
 
 	return task;
-}

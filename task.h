@@ -1,3 +1,4 @@
+
 #pragma once
 #include <ctime>
 #include <string>
@@ -6,36 +7,35 @@ class Task
 {
 private:
 	/// <summary>
-	/// Название задачи
+	/// ГЌГ Г§ГўГ Г­ГЁГҐ Г§Г Г¤Г Г·ГЁ
 	/// </summary>
 	std::string _name;
 
 	/// <summary>
-	/// Приоритет задачи
+	/// ГЏГ°ГЁГ®Г°ГЁГІГҐГІ Г§Г Г¤Г Г·ГЁ
 	/// </summary>
 	int _priority;
 
 	/// <summary>
-	/// Описание задачи
+	/// ГЋГЇГЁГ±Г Г­ГЁГҐ Г§Г Г¤Г Г·ГЁ
 	/// </summary>
 	std::string _description;
 
 	/// <summary>
-	/// Дата и время задачи
+	/// Г„Г ГІГ  ГЁ ГўГ°ГҐГ¬Гї Г§Г Г¤Г Г·ГЁ
 	/// </summary>
 	time_t _date;
 
 public:
 	/// <summary>
-	/// Конструктор с параметрами
+	/// ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г± ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ
 	/// </summary>
-	/// <param name="name">Название задачи</param>
-	/// <param name="priority">Приоритет задачи</param>
-	/// <param name="description">Описание задачи</param>
-	/// <param name="date">Дата и время задачи</param>
+	/// <param name="name">ГЌГ Г§ГўГ Г­ГЁГҐ Г§Г Г¤Г Г·ГЁ</param>
+	/// <param name="priority">ГЏГ°ГЁГ®Г°ГЁГІГҐГІ Г§Г Г¤Г Г·ГЁ</param>
+	/// <param name="description">ГЋГЇГЁГ±Г Г­ГЁГҐ Г§Г Г¤Г Г·ГЁ</param>
+	/// <param name="date">Г„Г ГІГ  ГЁ ГўГ°ГҐГ¬Гї Г§Г Г¤Г Г·ГЁ</param>
 	Task(std::string name, int priority, std::string description, time_t date);
 
 	void Print();
 
 	static Task CreateTask();
-};
